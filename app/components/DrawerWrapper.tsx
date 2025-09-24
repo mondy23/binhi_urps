@@ -22,7 +22,7 @@ export default function DrawerWrapper({ children }: { children: React.ReactNode 
       <div className="relative flex flex-col flex-1 h-full w-full">
         {/* Desktop Drawer Toggle */}
         <button
-          className="hidden md:flex absolute top-32 left-0 z-30 h-8 w-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md transition-all duration-300 ease-in-out"
+          className="hidden md:flex absolute top-32 -left-4 z-30 h-8 w-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md transition-all duration-300 ease-in-out"
           onClick={() => setDesktopDrawerOpen(!isDesktopDrawerOpen)}
           aria-label="Toggle drawer"
         >
