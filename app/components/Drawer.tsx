@@ -22,19 +22,19 @@ const Drawer: React.FC<DrawerProps> = ({ open }) => {
 
     return (
         <div
-            className={`shadow-lg pt-55 transition-all duration-900 ${open ? "w-64 p-6" : "w-16 p-1"
+            className={`shadow-lg pt-55 transition-all duration-500 ${open ? "w-64 p-6" : "w-16 p-1"
                 }`}
         >
             {/* Logo */}
             <div
-                className={`absolute left-16 top-28 transition-all duration-900 ${open
+                className={`absolute left-16 top-28 transition-all duration-500 ${open
                     ? "w-[48px] h-[48px] translate-x-0 translate-y-0"
                     : "w-[38px] h-[38px] -translate-x-13 -translate-y-20"
                     } bg-[var(--primaryColor)] rounded-full`}
             >
                 <div
                     className={`${open ? "w-[28px] h-[28px]" : "w-[20px] h-[20px]"
-                        } transition-all duration-900 bg-amber-200 rounded-full`}
+                        } transition-all duration-500 bg-amber-200 rounded-full`}
                 ></div>
             </div>
 
@@ -53,16 +53,16 @@ const Drawer: React.FC<DrawerProps> = ({ open }) => {
                     return (<li
                         key={item.title}
                         onClick={() => router.push(item.path)}
-                        className={`${isActive ? "bg-[var(--activeItemColor)]" : ""} group rounded-2xl px-4 py-2 flex gap-4 items-center transition-all duration-900 hover:bg-[var(--activeItemColor)] cursor-pointer`}
+                        className={`${isActive ? "bg-[var(--activeItemColor)]" : ""} group rounded-2xl px-4 py-2 flex gap-4 items-center transition-all duration-500 hover:bg-[var(--activeItemColor)] cursor-pointer`}
                     >
                         {/* Icon with dynamic color */}
-                        <span className={`transition-all duration-900 ${isActive ? "text-black":"text-[var(--inactiveTextColor)]"} group-hover:text-black text-xl`}>
+                        <span className={`transition-all duration-500 ${isActive ? "text-black":"text-[var(--inactiveTextColor)]"} group-hover:text-black text-xl`}>
                             {item.icon}
                         </span>
 
                         {/* Title */}
                         <h1
-                            className={`transition-all duration-900 ${open
+                            className={`transition-all duration-500 ${open
                                 ? isActive
                                   ? "opacity-100 text-black"
                                   : "opacity-100 text-[var(--inactiveTextColor)] group-hover:text-black"
